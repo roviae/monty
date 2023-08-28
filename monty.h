@@ -4,6 +4,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
+#include <ctype.h>
 
 #define STACK 0
 #define QUEUE 1
@@ -72,7 +73,7 @@ void monty_queue(stack_t **stack, unsigned int line_number);
 
 /* CUSTOM STANDARD LIBRARY FUNCTIONS */
 char **strtow(char *str, char *delims);
-char *get_int(int n);
+/*char *get_int(int n);*/
 
 /* ERROR MESSAGES & ERROR CODES */
 int usage_error(void);
